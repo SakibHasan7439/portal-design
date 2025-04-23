@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>system design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/websiteLogo.png" alt="website logo" class="logo">
+            </div>
+            <div class="nav-items">
+                <a href="#">Features</a>
+                <a href="#">Achievements</a>
+                <a href="#">Testimonials</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div>
+                <button class="deactivate-btn">Sign Up</button>
+                <button class="btn">Login</button>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <img src="./images/menuIcon.png" alt="website logo" class="logo"> 
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Features</a>
+            <a href="#">Achievements</a>
+            <a href="#">Testimonials</a>
+            <a href="#">FAQ</a>
+            <button class="deactive-btn">Sign Up</button>
+            <button class="btn">Login</button>
+        </div>
+        <!-- Create a hero section for a website promoting a design dashboard -->
+        <!-- Include: 
+        1. A small badge (Design System For Gen Z),
+        2. A big bold heading with a highlighted word ("Sloth"),
+        3. A supporting paragraph,
+        4. App Store and Google Play buttons,
+        5. A large image showing the dashboard mockup (static image),
+        6. A mobile version mockup slightly overlapping or floating on the side. -->
+
+        <!-- Use CSS Flexbox or Grid for layout -->
+        <!-- Make it responsive for small and large screens -->
+        <div class="hero-section container">
+            <div class="badge">Design System For Gen Z</div>
+            <h1 class="hero-heading">Unleash Your Inner Design Sloth Today.</h1>
+            <p class="sub-heading">Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Cras fermentum odio eu feugiat pretium nibh ipsum. Venenatis cras sed felis eget velit aliquet.</p>
+            <div class="app-buttons">
+                <img src="./images/app.png" alt="App Store" class="app-button">
+                <img src="./images/google.png" alt="Google Play" class="app-button">
+            </div>
+            <div class="dashboard-mockup">
+                <img src="./images/Frame.png" alt="Dashboard Mockup" class="mockup-image">
+            </div>
+        </div> 
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('mobileMenu');
+                menu.classList.toggle('active');
+            }
+        </script>    
+    </body>
+</html>

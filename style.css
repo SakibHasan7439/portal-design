@@ -1,0 +1,185 @@
+/* create a reusable button class that will have a background color #4F46E5 and text color white and I will be using it in my whole website*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.btn {
+    background-color: #4F46E5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+/* add hover effect to the button class */
+.btn:hover {
+    background-color: #4338CA;
+}
+
+.deactivate-btn {
+    color: black;
+    cursor: pointer;
+    border: 2px solid #CBD5E1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 16px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+.nav-items a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 50%;  
+}
+.mobile-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.mobile-menu a:hover {
+    text-decoration: underline;
+}
+.mobile-menu.active {
+    display: flex;
+}
+
+.hero-heading {
+    font-size: 76px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+
+    .deactivate-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    
+    .hero-heading {
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+}
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.badge {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.highlight {
+    color: #ff6347; /* Tomato color */
+}
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.app-button {
+    width: 150px;
+    height: auto;
+}
+.dashboard-mockup {
+    position: relative;
+    margin-top: 20px;
+}
+.mockup-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+.mobile-version-mockup {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    width: 200px;
+    height: auto;
+}
