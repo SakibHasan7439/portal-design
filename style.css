@@ -96,6 +96,13 @@ body {
     display: flex;
 }
 
+.hero {
+    background: linear-gradient(to bottom, #ffffff, #9497de);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
 .hero-heading {
     font-size: 76px;
     font-weight: bold;
@@ -106,6 +113,26 @@ body {
     font-size: 28px;
     margin-bottom: 20px;
 }
+
+.brand-section {
+    background-color: #F8FAFC;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.brand-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.brand-logo {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    flex: 1 1 160px; /* Flex-grow, flex-shrink, and flex-basis */
+}
+
 /* Responsive Design */
 
 @media (max-width: 768px) {
@@ -149,7 +176,7 @@ body {
     padding: 20px;
 }
 .badge {
-    background-color: #f0f0f0;
+    background-color: #EEF2FF;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -173,7 +200,7 @@ body {
 }
 .mockup-image {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     height: auto;
 }
 .mobile-version-mockup {
