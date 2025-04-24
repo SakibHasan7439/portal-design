@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
+    text-transform: capitalize;
     transition: background-color 0.3s ease;
 }
 /* add hover effect to the button class */
@@ -451,7 +452,6 @@ h1, h2, h3, h4, h5, h6 {
 .faq-section {
     background-color: #F8FAFC;
     padding: 50px 0;
-    margin-bottom: 20px;
 }
 
 .faq-badge {
@@ -516,6 +516,115 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .hidden {
+    display: none;
+}
+
+.download-app-section {
+    background-color: #EEF2FF;
+    margin-bottom: 20px;
+}
+
+.content-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.download-app-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.download-app-subheading {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 100;
+    margin-bottom: 30px;
+} 
+
+
+.learn-more-btn {
+    background-color: transparent;
+    color: #1b4ae4;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 1px solid #EEF2FF;
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.download-app-image {
+    display: flex;
+    position: relative;
+    justify-content: right;
+}
+
+.site-footer {
+    color: #000000;
+    padding: 40px 0 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1 1 193px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    min-width: 150px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: #475569;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #94A3B8;
+}
+
+.small-button-icon {
     display: none;
 }
 /* Responsive Design */
@@ -621,11 +730,66 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         margin-bottom: 20px;
     }
+
+    .large-device-image {
+        display: none;
+    }
+
+    .content-align {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-app-section {
+        padding: 40px 10px;
+    }
+
+    .learn-more-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .download-btn .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-column {
+        flex: 1 1 50%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px ;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .button-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column {
+        flex: 1 1 100%;
+    }
 }
 
 @media (min-width: 769px) {
     .mobile-menu {
         display: none;
+    }
+
+    .small-device-image {
+        display: none;
+    }
+    .large-device-image {
+        display: block;
+    }
+
+    .screen-image {
+        padding-top: 40px;
     }
 }
 
