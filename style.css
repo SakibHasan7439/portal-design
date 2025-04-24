@@ -1,4 +1,8 @@
 /* create a reusable button class that will have a background color #4F46E5 and text color white and I will be using it in my whole website*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -197,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Arial, sans-serif;
 }
 .lock-icon {
-    width: 20px;
+    width: 35px;
     height: auto;
     margin-bottom: 20px;
     background-color: #EEF2FF;
@@ -253,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 .procrastinators-section {
     background-color: #ffffff;
     padding: 50px 0;
+    margin-bottom: 20px;
 }
 
 .procrastinators {
@@ -295,6 +300,97 @@ h1, h2, h3, h4, h5, h6 {
 
 .procrastinators-image {
     max-width: 600px;
+}
+
+.badge-left {
+    background-color: #EEF2FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 110px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.client-say {
+    background-color: #F8FAFC;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.client-say-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.client-say-subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.client-say-cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.client-say-card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #E5E7EB;
+}
+
+.client-say-description {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #475569;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.client-info-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.designation {
+    font-size: 14px;
+    color: #475569;
+}
+
+.testimonials {
+    background-color: #EEF2FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.client-rating {
+    margin-bottom: 15px;
+}
+
+.client-say-image {
+    width: 50px;
+    height: 50px;
 }
 /* Responsive Design */
 
@@ -358,6 +454,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .procrastinators-image {
         width: 100%;
+    }
+
+    .client-say-heading {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
     }
 }
 @media (min-width: 769px) {
