@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100px;
     height: auto;
     margin: 10px;
-    flex: 1 1 160px; /* Flex-grow, flex-shrink, and flex-basis */
+    flex: 1 1 160px;
 }
 
 .features-section {
@@ -392,6 +392,62 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
     height: 50px;
 }
+
+.office-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.office-badge {
+    background-color: #EEF2FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.office-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.office-subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.office-location-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.office-location-card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #E5E7EB;
+    flex: 1 1 200px; 
+}
+.office-location-card .location-heading {
+    color: #000000;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.location-description {
+    color: #1E293B;
+    font-size: 16px;
+    line-height: 1.5;
+}
 /* Responsive Design */
 
 @media (max-width: 768px) {
@@ -418,6 +474,10 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
         margin-bottom: 5px;
         font-weight: bold;
+    }
+
+    .brand-logo {
+        flex: 1 1 105px;
     }
 
     .statistics-section {
@@ -461,7 +521,29 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         margin-bottom: 20px;
     }
+
+    .office-location-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .office-section {
+        padding: 10px;
+    }
+
+    .office-heading {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .office-location-card {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
+
 @media (min-width: 769px) {
     .mobile-menu {
         display: none;
