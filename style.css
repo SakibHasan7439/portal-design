@@ -188,6 +188,114 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     line-height: 1.5;
 }
+
+.statistics-section {
+    background-color: #f9fbff;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+.lock-icon {
+    width: 20px;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #EEF2FF;
+    padding: 8px;
+    border-radius: 100%;
+}
+.statistics-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.statistics-subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 100;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.statistics-description {
+    font-size: 16px;
+    color: #777;
+}
+
+.statistics-blocks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.statistics-block {
+    padding: 20px;
+    border-right: 2px solid #CBD5E1;
+    text-align: center;
+    flex: 1 1 200px; 
+}
+
+.statistics-block .statistics-heading {
+    color: #4F46E5;
+}
+
+.statistics-block .statistics-description {
+    font-weight: 700;
+    color: black;
+}
+
+.procrastinators-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.procrastinators {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.procrastinators-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.procrastinators-subheading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.procrastinators-description {
+    color: #6c757d;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.procrastinators-heading {
+    margin-bottom: 10px;
+}
+
+.procrastinators-block {
+    border-left: 3px solid #4F46E5;
+    padding: 10px;
+}
+
+.procrastinators-image {
+    max-width: 600px;
+}
 /* Responsive Design */
 
 @media (max-width: 768px) {
@@ -214,6 +322,42 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
         margin-bottom: 5px;
         font-weight: bold;
+    }
+
+    .statistics-section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .statistics-heading {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 17px;
+    }
+
+    .statistics-subheading {
+        font-size: 20px;
+    }
+
+    .statistics-blocks {
+        flex-direction: column;
+    }
+
+    .statistics-block {
+        border-bottom: 2px solid #CBD5E1;
+    }
+
+    .procrastinators {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .procrastinators-section {
+        padding: 10px;
+    }
+
+    .procrastinators-image {
+        width: 100%;
     }
 }
 @media (min-width: 769px) {
