@@ -325,12 +325,88 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- FAQ Section -->
+        <!-- Goal: Create a dynamic FAQ section -->
+
+        <!-- 1. Section badge -->
+        <!-- 2. Section title -->
+        <!-- 3. Section subtitle -->
+
+        <!-- 4. Add 5 FAQ questions. When a user clicks a question, the answer should toggle (show/hide). 
+        Questions:
+        - Enim sed faucibus turpis in eu mi bibendum neque egestas?
+        - Amet consectetur adipiscing elit pellentesque habitant morbi tristique?
+        - Elit pellentesque habitant morbi tristique senectus?
+        - Gravida quis blandit turpis cursus in hac. Mi ipsum faucibus vitae aliquet nec?
+        - Est pellentesque elit ullamcorper dignissim cras. In pellentesque massa placerat?
+        -->
+        <div class="faq-section">
+            <div class="container">
+                <div class="faq-badge">FAQ</div>
+                <h3 class="faq-heading">Frequently Asked Questions</h3>
+                <p class="faq-subheading">Fermentum iaculis eu non diam phasellus vestibulum. Volutpat commodo sed egestas egestas fringilla phasellus. Donec ac odio tempor orci dapibus ultrices..</p>
+                <div class="faq-questions">
+                    <div class="question" onclick="toggleAnswer(0)">
+                        <div class="questionTitle">
+                            <img src="./images/Question.png" alt="question mark">
+                            <h4>Enim sed faucibus turpis in eu mi bibendum neque egestas?</h4>
+                            <img class="caret-icon" src="./images/CaretDown.png" alt="caretdown icon">
+                        </div>
+                        <p class="answer hidden" id="answer0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="question" onclick="toggleAnswer(1)">
+                        <div class="questionTitle">
+                            <img src="./images/Question.png" alt="question mark">
+                            <h4>Amet consectetur adipiscing elit pellentesque habitant morbi tristique?</h4>
+                            <img class="caret-icon" src="./images/CaretDown.png" alt="caretdown icon">
+                        </div>
+                        <p class="answer hidden" id="answer1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="question" onclick="toggleAnswer(2)">
+                        <div class="questionTitle">
+                            <img src="./images/Question.png" alt="question mark">
+                            <h4>Elit pellentesque habitant morbi tristique senectus?</h4>
+                            <img class="caret-icon" src="./images/CaretDown.png" alt="caretdown icon">
+                        </div>
+                        <p class="answer hidden" id="answer2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="question" onclick="toggleAnswer(3)">
+                        <div class="questionTitle">
+                            <img src="./images/Question.png" alt="question mark">
+                            <h4>Gravida quis blandit turpis cursus in hac. Mi ipsum faucibus vitae aliquet nec?</h4>
+                            <img class="caret-icon" src="./images/CaretDown.png" alt="caretdown icon">
+                        </div>
+                        <p class="answer hidden" id="answer3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="question" onclick="toggleAnswer(4)">
+                        <div class="questionTitle">
+                            <img src="./images/Question.png" alt="question mark">
+                            <h4>Est pellentesque elit ullamcorper dignissim cras. In pellentesque massa placerat?</h4>
+                            <img class="caret-icon" src="./images/CaretDown.png" alt="caretdown icon">
+                        </div>
+                        <p class="answer hidden" id="answer4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+            </div>
+        </div>
+
         <script>
             function toggleMenu() {
                 const menu = document.getElementById('mobileMenu');
                 menu.classList.toggle('active');
             }
+            // Add event listeners to the questions
+            function toggleAnswer(index) {
+            const answer = document.getElementById(`answer${index}`);
+            answer.classList.toggle('hidden');
+            const caret = document.querySelectorAll('.caret-icon')[index];
+            caret.classList.toggle('rotate-180');
+            }
+
         </script>    
     </body>
 </html>
